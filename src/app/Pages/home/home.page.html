@@ -12,10 +12,10 @@
 	</ion-refresher>
 	<ion-list #mylist >
 			<ion-reorder-group disable="false">
-				<ion-item-sliding *ngFor="let animal of animales; let i=index" >
-					<ion-item (click)="reproducir(animal)">
+				<ion-item-sliding *ngFor="let animal of animals; let i=index" >
+					<ion-item (click)="reproduce(animal)">
 						<ion-avatar slot="start">
-						  <img [src]="animal.imagen">
+						  <img [src]="animal.imagen" alt="">
 						</ion-avatar>
 				    	<h2> {{animal.nombre}}</h2>
 
